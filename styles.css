@@ -1,0 +1,114 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header & Navigation */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: url('assets/profile.jpg') center/cover no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+.btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* Sections */
+section {
+    padding: 80px 10%;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Experience & Skills */
+.job {
+    background: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #007bff;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skills-grid span {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Contact */
+#contact {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
