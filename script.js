@@ -16,16 +16,21 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("nav ul li a").forEach(anchor => {
         anchor.addEventListener("click", function (e) {
-            e.preventDefault();
             const targetId = this.getAttribute("href");
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 75, // Adjust to navbar height
-                    behavior: "smooth"
-                });
+
+            // Only prevent default if it's an internal anchor link (starts with #)
+            if (targetId.startsWith("#")) {
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 75, // Adjust for navbar height
+                        behavior: "smooth"
+                    });
+                }
             }
         });
     });
 });
+
 

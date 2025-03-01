@@ -66,7 +66,6 @@ nav ul li a {
 }
 
 .hero-content {
-    /* background: rgba(0, 0, 0, 0.6); */
     padding: 20px;
     border-radius: 10px;
 }
@@ -101,19 +100,30 @@ nav ul li a {
     transition: background 0.3s ease;
 }
 
-/* Center the About Section */
 #about {
     display: flex;
-    justify-content: center;  /* Horizontally center */
-    align-items: center;      /* Vertically center */
-    text-align: center;       /* Center text */
-    height: 20vh;            /* Full viewport height */
-    padding: 20px;            /* Prevent content from touching screen edges */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto; /* Adjust height for longer text */
+    padding: 40px;
+    background: white;
 }
 
-/* Ensure Text is Readable */
 .about-content {
-    max-width: 600px;         /* Prevent too-wide text */
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
 }
 
 .btn:hover {
@@ -139,19 +149,17 @@ h2 {
     border-left: 5px solid #007bff;
 }
 
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+.skills-list {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    line-height: 2;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-.skills-grid span {
-    background: #007bff;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
 
 /* Contact */
 #contact {
